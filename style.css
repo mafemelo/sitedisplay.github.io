@@ -1,0 +1,511 @@
+
+*{margin: 0;
+box-sizing: border-box;}
+
+body{display: flex;}
+
+.aside{
+    display: inline-block;
+    background-color: black;
+    height: 975vh;
+    width: 13%;    
+}
+
+.aside-icones{
+    display:flex;
+    display:inline-block;
+
+}
+
+svg{
+    height: 20px;
+    fill: white;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 12px;
+    height: 13px;
+    
+}
+.aside svg:hover{
+    fill: rgb(233, 14, 98);
+}
+
+.text-aside{
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    align-content: space-between;
+    font-family: "Quicksand",sans-serif;
+    font-size: 12.8px;
+    align-content: space-between;
+    padding: 4px;
+    position: fixed;
+    list-style: none;
+   
+}
+
+
+.text-aside li{
+    margin-bottom: 20px;
+   
+}
+
+h2{
+    margin-bottom: 24%;
+    margin-top: 23%;
+    font-size: 20px;
+}
+
+
+main{
+    background-image: url(img_9.jpg);
+    width: 87%;
+    background-size: 100%;
+    height: 100vh;
+}
+
+#welcome{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: brightness(50%);
+   
+}
+
+#welcome h1{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    margin-top: 8px;
+}
+#welcome p {
+     width: 60%;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 48px;
+}
+
+
+
+#contact-me{
+    color: #fff;
+    background-color: #df0e62;
+    height: 50px;
+    width: 10%;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14px;
+   font-weight: 600;
+    font-family: "Quicksand",sans-serif;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    row-gap: 10px;
+}
+
+.imagens{
+    width: 33%;
+    height: 33vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.imagens:hover img{
+    filter: brightness(40%);
+}
+
+.imagens svg{
+    height: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.imagens:hover svg { 
+    opacity: 1;
+    top: 50%;
+}
+
+
+
+.testimonial{
+    background-color: black;
+    height: 100vh;
+    
+}
+
+.testimonial h3{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+}
+.testimonial img{
+    height: 15%;
+    width: 15%;
+    border-radius: 120px;
+    margin-top: 4% ;
+    margin-left: 43%;
+}
+.testimonial p{
+    font-family: "Quicksand",sans-serif;
+    color: #808080;
+    font-size: 16px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-left: 25%;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+}
+.testimonial h1 {
+    font-family: "Quicksand",sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;   
+}
+
+
+
+
+
+.biography{
+    height: 170vh;
+    background-color: #181717;
+    padding-top: 5%; 
+    padding-left: 27%;
+}
+
+.biography a{
+    color: #df0e62;
+    text-decoration: none;
+    font-family: "Quicksand",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.biography img{
+    height: 45%;
+    width:30%;
+    border-radius: 5px;
+
+}
+
+.biography h3{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    padding-bottom: 5%;
+    
+}
+
+.biography h1{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.biography p {
+    width: 65%;
+    font-family: "Quicksand",sans-serif;
+    color: #808080;
+    font-size: 15px;
+    padding-bottom: 2%;
+    font-weight: 300;
+}
+
+.checks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.class div{
+    width: 70%;
+}
+.checks li{
+    width: 80%;
+    font-family: "Quicksand",sans-serif;
+    color: #808080;
+    font-size: 15px;
+    padding-bottom: 2%;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+
+
+.blog{
+    background-color: black;
+    height: 180vh;
+    padding-left: 27% ;
+    padding-top:5% ;
+}
+
+.blog a{
+    color: #df0e62;
+    text-decoration: none;
+    font-family: "Quicksand",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog-colunas{
+    display: block;
+}
+
+#tamanho-div1{
+    width: 290px;
+    height: 30vh;
+}
+#tamanho-div2{
+    width: 40%;
+    height: 20vh;
+}
+
+.blog h3{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    padding-bottom: 5%;
+   
+}
+.blog-conteudo{
+    display: flex;
+    align-items:flex-start;
+}
+
+.blog-conteudo img{
+    height: 70%;
+    width:80%
+}
+
+.blog-conteudo p{
+    font-family: "Quicksand",sans-serif;
+    color: #808080;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#blog-titulo{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+#blog-text{
+    margin-bottom: 16px;
+}
+
+#blog-numeros{
+    align-content: space-between 4px;
+    margin-left: 30%;
+}
+#numeros-brancos{
+    color: white;
+   
+}
+
+.contact{
+    background-color: #181717;
+    height: 100vh;
+    padding-left: 27% ;
+    padding-top:5% ;
+}
+
+.contact h3{
+   
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    padding-bottom: 5%;
+       
+}
+
+.contact-forms{
+    display: flex;
+    display: inline-flex;
+}
+
+
+
+
+.rodape{
+    background-color: black;
+    height: 15vh;
+    padding-top: 3%;
+    padding-left: 30%;
+}
+
+.rodape h1{
+    font-family: "Quicksand",sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+#contact{
+    background-color: rgb(26, 26, 26);
+    height: 1100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items:start   ;
+    padding: 120px;
+    color: white;
+}
+
+
+#contact h1{
+    font-family: "Oswald",arial,sans-serif;
+    font-weight: 400;
+    font-size: 65px;
+    padding-left: 100px;
+}
+#inicio{
+    font-size: 15px;
+    width: 70%;
+    padding-top: 8px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Quicksand",sans-serif ;
+}
+#inicio p{
+    margin-bottom: 30px;
+}
+.firstname{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+.lastname{
+    display: flex;
+    flex-direction: column;
+}
+.linha{
+    background-color:rgb(153, 153, 153); 
+    height: 2px;
+    width: 350px;
+    margin-left: 5px;
+}
+.email{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    font-size: 15px;
+    width: 70%;
+    padding-top: 9px;
+    margin-left: 101px;
+    margin-top: 11px;
+}
+.email p{
+    margin-bottom: 30px;
+    font-family: "Quicksand",sans-serif ;
+}
+.linhabranca{
+    background-color:rgb(153, 153, 153); 
+    width: 700px;
+    height: 2px;
+    margin-left: 5px;
+}
+.message{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    font-size: 15px;
+    width: 70%;
+    padding-top: 8px;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: "Quicksand",sans-serif ;
+    
+}
+.textbox{
+    color:rgb(153, 153, 153);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom:130px ;
+}
+#botao{
+    
+    width: 164px;
+    height: 53px;
+    background-color: rgb(233, 14, 98);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 53px;
+    margin-top: 3.7%;
+    font-family:"Quicksand",sans-serif ;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 130px;
+    
+    
+}
+
+
+#rosinha{
+    width: 130px;
+    background-color: rgb(233, 14, 98);
+    height: 5px;
+}
+#fundopreto{
+    background-color: #1a1a1a;}
+
+
+
+
+#fundo-textbox{
+    font-family:"Quicksand",sans-serif ;
+    color:rgb(245, 240, 240);
+    background-color: #1a1a1a;
+    border: 0 none;
+    outline: 0;
+}
